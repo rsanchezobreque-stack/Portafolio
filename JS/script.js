@@ -4,9 +4,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  /* ==================================================
-   INICIAR AOS (Animaciones de desplazamiento)
-  ================================================== */
+  /* ANIMACIONES AOS */
   if (typeof AOS !== "undefined") {
     AOS.init({
       duration: 900,
@@ -17,9 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* ==================================================
-   NAVBAR AL HACER SCROLL
-  ================================================== */
+  /* NAVBAR AL HACER SCROLL */
   const navbar = document.getElementById("mainNavbar");
 
   if (navbar) {
@@ -32,9 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* ==================================================
-   MARCAR PÁGINA ACTUAL EN EL MENÚ
-  ================================================== */
+  /* MARCAR PÁGINA ACTUAL */
   const currentPage = document.body.dataset.page;
 
   if (currentPage) {
@@ -46,9 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* ==================================================
-   CERRAR MENÚ EN MÓVIL AL HACER CLIC EN UN ENLACE
-  ================================================== */
+  /* CERRAR MENÚ EN MÓVIL AL HACER CLIC */
   const mobileLinks = document.querySelectorAll(".navbar .nav-link");
   const menu = document.getElementById("menuNavegacion");
 
@@ -65,9 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /* ==================================================
-   AÑO AUTOMÁTICO EN EL FOOTER
-  ================================================== */
+  /* AÑO AUTOMÁTICO EN EL FOOTER */
   const copyright = document.getElementById("copyright");
 
   if (copyright) {
