@@ -1,329 +1,146 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería | Raixez</title>
 
-    <title>Galería | Raixez</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
-
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-        crossorigin="anonymous"
-    >
-
-    <link
-        href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
-        rel="stylesheet"
-    >
-
-    <link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body data-page="galeria">
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+    <div class="container">
 
-        <div class="container">
+      <a class="navbar-brand logo" href="index.html">
+        <span>&lt;</span>Raixez<span>/&gt;</span>
+      </a>
 
-            <a class="navbar-brand logo" href="index.html">
-                <span>&lt;</span>Raixez<span>/&gt;</span>
-            </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#menuNavegacion"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <div class="collapse navbar-collapse" id="menuNavegacion">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" data-page-link="inicio" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" data-page-link="sobre-mi" href="sobre-mi.html">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" data-page-link="habilidades" href="habilidades.html">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" data-page-link="estudios" href="estudios.html">Estudios</a></li>
+          <li class="nav-item"><a class="nav-link" data-page-link="proyectos" href="proyectos.html">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" data-page-link="galeria" href="galeria.html">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" data-page-link="contacto" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
 
-            <div class="collapse navbar-collapse" id="menuNavegacion">
+    </div>
+  </nav>
 
-                <ul class="navbar-nav ms-auto">
+  <main class="page-main">
+    <section class="content-page">
+      <div class="container">
 
-                    <li class="nav-item">
-                        <a class="nav-link" data-page-link="inicio" href="index.html">Inicio</a>
-                    </li>
+        <div class="page-header" data-aos="fade-down">
+          <p>05 — GALERÍA</p>
+          <h1>Algunos trabajos</h1>
+        </div>
 
-                    <li class="nav-item">
-                        <a class="nav-link" data-page-link="sobre-mi" href="sobre-mi.html">Sobre mí</a>
-                    </li>
+        <!-- CARRUSEL -->
+        <div id="galleryCarousel" class="carousel slide gallery-carousel" data-bs-ride="carousel" data-aos="zoom-in">
 
-                    <li class="nav-item">
-                        <a class="nav-link" data-page-link="habilidades" href="habilidades.html">Habilidades</a>
-                    </li>
+          <!-- INDICADORES -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="3"></button>
+          </div>
 
-                    <li class="nav-item">
-                        <a class="nav-link" data-page-link="estudios" href="estudios.html">Estudios</a>
-                    </li>
+          <div class="carousel-inner">
 
-                    <li class="nav-item">
-                        <a class="nav-link" data-page-link="proyectos" href="proyectos.html">Proyectos</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" data-page-link="galeria" href="galeria.html">Galería</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" data-page-link="contacto" href="contacto.html">Contacto</a>
-                    </li>
-
-                </ul>
-
+            <!-- IMAGEN 1 -->
+            <div class="carousel-item active">
+              <div class="gallery-slide">
+                <!--
+                <img src="img/trabajo1.jpg" alt="Trabajo 1">
+                -->
+                <div class="gallery-placeholder">
+                  <span>+</span> Trabajo 1
+                </div>
+              </div>
             </div>
+
+            <!-- IMAGEN 2 -->
+            <div class="carousel-item">
+              <div class="gallery-slide">
+                <!--
+                <img src="img/trabajo2.jpg" alt="Trabajo 2">
+                -->
+                <div class="gallery-placeholder">
+                  <span>+</span> Trabajo 2
+                </div>
+              </div>
+            </div>
+
+            <!-- IMAGEN 3 -->
+            <div class="carousel-item">
+              <div class="gallery-slide">
+                <!--
+                <img src="img/trabajo3.jpg" alt="Trabajo 3">
+                -->
+                <div class="gallery-placeholder">
+                  <span>+</span> Trabajo 3
+                </div>
+              </div>
+            </div>
+
+            <!-- IMAGEN 4 -->
+            <div class="carousel-item">
+              <div class="gallery-slide">
+                <!--
+                <img src="img/trabajo4.jpg" alt="Trabajo 4">
+                -->
+                <div class="gallery-placeholder">
+                  <span>+</span> Trabajo 4
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- CONTROLES -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
 
         </div>
 
-    </nav>
-
-
-    <main class="page-main">
-
-        <section class="content-page">
-
-            <div class="container">
-
-                <div class="page-header" data-aos="fade-down">
-
-                    <p>05 — GALERÍA</p>
-
-                    <h1>
-                        Algunos trabajos
-                    </h1>
-
-                </div>
-
-
-                <!-- CARRUSEL -->
-
-                <div
-                    id="galleryCarousel"
-                    class="carousel slide gallery-carousel"
-                    data-bs-ride="carousel"
-                    data-aos="zoom-in"
-                >
-
-                    <!-- INDICADORES -->
-
-                    <div class="carousel-indicators">
-
-                        <button
-                            type="button"
-                            data-bs-target="#galleryCarousel"
-                            data-bs-slide-to="0"
-                            class="active"
-                            aria-current="true"
-                        ></button>
-
-                        <button
-                            type="button"
-                            data-bs-target="#galleryCarousel"
-                            data-bs-slide-to="1"
-                        ></button>
-
-                        <button
-                            type="button"
-                            data-bs-target="#galleryCarousel"
-                            data-bs-slide-to="2"
-                        ></button>
-
-                        <button
-                            type="button"
-                            data-bs-target="#galleryCarousel"
-                            data-bs-slide-to="3"
-                        ></button>
-
-                    </div>
-
-
-                    <div class="carousel-inner">
-
-
-                        <!-- IMAGEN 1 -->
-
-                        <div class="carousel-item active">
-
-                            <div class="gallery-slide">
-
-                                <!--
-                                <img
-                                    src="img/trabajo1.jpg"
-                                    alt="Trabajo 1"
-                                >
-                                -->
-
-                                <div class="gallery-placeholder">
-                                    <span>+</span>
-                                    Trabajo 1
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- IMAGEN 2 -->
-
-                        <div class="carousel-item">
-
-                            <div class="gallery-slide">
-
-                                <!--
-                                <img
-                                    src="img/trabajo2.jpg"
-                                    alt="Trabajo 2"
-                                >
-                                -->
-
-                                <div class="gallery-placeholder">
-                                    <span>+</span>
-                                    Trabajo 2
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- IMAGEN 3 -->
-
-                        <div class="carousel-item">
-
-                            <div class="gallery-slide">
-
-                                <!--
-                                <img
-                                    src="img/trabajo3.jpg"
-                                    alt="Trabajo 3"
-                                >
-                                -->
-
-                                <div class="gallery-placeholder">
-                                    <span>+</span>
-                                    Trabajo 3
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- IMAGEN 4 -->
-
-                        <div class="carousel-item">
-
-                            <div class="gallery-slide">
-
-                                <!--
-                                <img
-                                    src="img/trabajo4.jpg"
-                                    alt="Trabajo 4"
-                                >
-                                -->
-
-                                <div class="gallery-placeholder">
-                                    <span>+</span>
-                                    Trabajo 4
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- ANTERIOR -->
-
-                    <button
-                        class="carousel-control-prev"
-                        type="button"
-                        data-bs-target="#galleryCarousel"
-                        data-bs-slide="prev"
-                    >
-
-                        <span
-                            class="carousel-control-prev-icon"
-                            aria-hidden="true"
-                        ></span>
-
-                        <span class="visually-hidden">
-                            Anterior
-                        </span>
-
-                    </button>
-
-
-                    <!-- SIGUIENTE -->
-
-                    <button
-                        class="carousel-control-next"
-                        type="button"
-                        data-bs-target="#galleryCarousel"
-                        data-bs-slide="next"
-                    >
-
-                        <span
-                            class="carousel-control-next-icon"
-                            aria-hidden="true"
-                        ></span>
-
-                        <span class="visually-hidden">
-                            Siguiente
-                        </span>
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <footer>
-
-        <div class="container">
-
-            <div class="footer-logo">
-                &lt;Raixez/&gt;
-            </div>
-
-            <p>
-                Diseñado y desarrollado por Raúl Elías Sánchez Obreque
-            </p>
-
-            <p id="copyright">
-                © 2026 Raixez
-            </p>
-
-        </div>
-
-    </footer>
-
-
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"
-    ></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-
-    <script src="js/script.js"></script>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-logo">&lt;Raixez/&gt;</div>
+      <p>Diseñado y desarrollado por Raúl Elías Sánchez Obreque</p>
+      <p id="copyright">© 2026 Raixez</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 </html>

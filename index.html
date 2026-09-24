@@ -1,451 +1,220 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Raixez | Portafolio</title>
+  <title>Raixez | Portafolio</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-        crossorigin="anonymous"
-    >
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-    <!-- AOS -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
-        rel="stylesheet"
-    >
-
-    <!-- CSS propio -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body data-page="inicio">
 
+  <!-- ==================================================
+  NAVBAR
+  ================================================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+    <div class="container">
+
+      <a class="navbar-brand logo" href="index.html">
+        <span>&lt;</span>Raixez<span>/&gt;</span>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menuNavegacion"
+        aria-controls="menuNavegacion"
+        aria-expanded="false"
+        aria-label="Abrir navegación"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuNavegacion">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" data-page-link="inicio" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-page-link="sobre-mi" href="sobre-mi.html">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-page-link="habilidades" href="habilidades.html">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-page-link="estudios" href="estudios.html">Estudios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-page-link="proyectos" href="proyectos.html">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-page-link="galeria" href="galeria.html">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-page-link="contacto" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- ==================================================
+  INICIO
+  ================================================== -->
+  <main>
+    <section class="home-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+
+          <!-- TEXTO -->
+          <div class="col-lg-7" data-aos="fade-right">
+            <p class="small-title">HOLA, SOY</p>
+
+            <h1 class="hero-title">
+              Raúl Elías <br>
+              <span>Sánchez Obreque</span>
+            </h1>
+
+            <h2 class="hero-subtitle">Estudiante de Programación</h2>
+
+            <p class="hero-text">
+              Mi nombre digital es <strong>Raixez</strong> o <strong>Elaizon</strong>.
+            </p>
+
+            <p class="hero-text">
+              Me interesa la programación, el desarrollo de videojuegos y la animación digital.
+            </p>
+
+            <div class="hero-actions">
+              <a href="proyectos.html" class="btn btn-primary-custom">Ver proyectos</a>
+              <a href="contacto.html" class="btn btn-outline-custom">Contactarme</a>
+            </div>
+          </div>
+
+          <!-- FOTO -->
+          <div class="col-lg-5 text-center" data-aos="fade-left" data-aos-delay="200">
+            <div class="profile-circle">
+              <!--
+              <img src="img/foto.jpg" alt="Foto de Raúl">
+              -->
+              <div class="profile-placeholder">
+                <div class="profile-camera">📷</div>
+                <p>Tu foto aquí</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- ==================================================
-         NAVBAR
+    ACCESOS A LAS PÁGINAS
     ================================================== -->
+    <section class="navigation-section">
+      <div class="container">
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+        <div class="section-title text-center" data-aos="fade-up">
+          <p>EXPLORA MI PORTAFOLIO</p>
+          <h2>Conoce mi trabajo</h2>
+        </div>
 
-        <div class="container">
+        <div class="row g-4">
 
-            <a class="navbar-brand logo" href="index.html">
-                <span>&lt;</span>Raixez<span>/&gt;</span>
+          <div class="col-md-6 col-lg-4">
+            <a href="sobre-mi.html" class="navigation-card" data-aos="fade-up">
+              <span class="navigation-icon">👤</span>
+              <h3>Sobre mí</h3>
+              <p>Conoce quién soy y mis objetivos.</p>
+              <span class="navigation-arrow">→</span>
             </a>
+          </div>
 
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#menuNavegacion"
-                aria-controls="menuNavegacion"
-                aria-expanded="false"
-                aria-label="Abrir navegación"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
+          <div class="col-md-6 col-lg-4">
+            <a href="habilidades.html" class="navigation-card" data-aos="fade-up" data-aos-delay="100">
+              <span class="navigation-icon">💻</span>
+              <h3>Mis habilidades</h3>
+              <p>Lenguajes, tecnologías y conocimientos.</p>
+              <span class="navigation-arrow">→</span>
+            </a>
+          </div>
 
-            <div class="collapse navbar-collapse" id="menuNavegacion">
+          <div class="col-md-6 col-lg-4">
+            <a href="estudios.html" class="navigation-card" data-aos="fade-up" data-aos-delay="200">
+              <span class="navigation-icon">🎓</span>
+              <h3>Mis estudios</h3>
+              <p>Mi formación actual y autodidacta.</p>
+              <span class="navigation-arrow">→</span>
+            </a>
+          </div>
 
-                <ul class="navbar-nav ms-auto">
+          <div class="col-md-6 col-lg-4">
+            <a href="proyectos.html" class="navigation-card" data-aos="fade-up" data-aos-delay="300">
+              <span class="navigation-icon">🎮</span>
+              <h3>Mis proyectos</h3>
+              <p>Videojuegos y proyectos de programación.</p>
+              <span class="navigation-arrow">→</span>
+            </a>
+          </div>
 
-                    <li class="nav-item">
-                        <a class="nav-link" data-page-link="inicio" href="index.html">
-                            Inicio
-                        </a>
-                    </li>
+          <div class="col-md-6 col-lg-4">
+            <a href="galeria.html" class="navigation-card" data-aos="fade-up" data-aos-delay="400">
+              <span class="navigation-icon">🖼️</span>
+              <h3>Galería</h3>
+              <p>Algunos de mis trabajos e imágenes.</p>
+              <span class="navigation-arrow">→</span>
+            </a>
+          </div>
 
-                    <li class="nav-item">
-                        <a class="nav-link" data-page-link="sobre-mi" href="sobre-mi.html">
-                            Sobre mí
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" data-page-link="habilidades" href="habilidades.html">
-                            Habilidades
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" data-page-link="estudios" href="estudios.html">
-                            Estudios
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" data-page-link="proyectos" href="proyectos.html">
-                            Proyectos
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" data-page-link="galeria" href="galeria.html">
-                            Galería
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" data-page-link="contacto" href="contacto.html">
-                            Contacto
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
+          <div class="col-md-6 col-lg-4">
+            <a href="contacto.html" class="navigation-card" data-aos="fade-up" data-aos-delay="500">
+              <span class="navigation-icon">📩</span>
+              <h3>Contacto</h3>
+              <p>Encuentra mis medios de contacto.</p>
+              <span class="navigation-arrow">→</span>
+            </a>
+          </div>
 
         </div>
 
-    </nav>
-
-
-
-    <!-- ==================================================
-         INICIO
-    ================================================== -->
-
-    <main>
-
-        <section class="home-section">
-
-            <div class="container">
-
-                <div class="row align-items-center g-5">
-
-                    <!-- TEXTO -->
-
-                    <div class="col-lg-7" data-aos="fade-right">
-
-                        <p class="small-title">
-                            HOLA, SOY
-                        </p>
-
-                        <h1 class="hero-title">
-                            Raúl Elías
-                            <br>
-                            <span>Sánchez Obreque</span>
-                        </h1>
-
-                        <h2 class="hero-subtitle">
-                            Estudiante de Programación
-                        </h2>
-
-                        <p class="hero-text">
-                            Mi nombre digital es
-                            <strong>Raixez</strong> o
-                            <strong>Elaizon</strong>.
-                        </p>
-
-                        <p class="hero-text">
-                            Me interesa la programación, el desarrollo
-                            de videojuegos y la animación digital.
-                        </p>
-
-                        <div class="hero-actions">
-
-                            <a
-                                href="proyectos.html"
-                                class="btn btn-primary-custom"
-                            >
-                                Ver proyectos
-                            </a>
-
-                            <a
-                                href="contacto.html"
-                                class="btn btn-outline-custom"
-                            >
-                                Contactarme
-                            </a>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- FOTO -->
-
-                    <div
-                        class="col-lg-5 text-center"
-                        data-aos="fade-left"
-                        data-aos-delay="200"
-                    >
-
-                        <div class="profile-circle">
-
-                            <!--
-                            Cuando tengas tu foto:
-
-                            <img
-                                src="img/foto.jpg"
-                                alt="Foto de Raúl"
-                            >
-                            -->
-
-                            <div class="profile-placeholder">
-
-                                <div class="profile-camera">
-                                    📷
-                                </div>
-
-                                <p>
-                                    Tu foto aquí
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ==================================================
-             ACCESOS A LAS PÁGINAS
-        ================================================== -->
-
-        <section class="navigation-section">
-
-            <div class="container">
-
-                <div
-                    class="section-title text-center"
-                    data-aos="fade-up"
-                >
-
-                    <p>EXPLORA MI PORTAFOLIO</p>
-
-                    <h2>
-                        Conoce mi trabajo
-                    </h2>
-
-                </div>
-
-
-                <div class="row g-4">
-
-                    <div class="col-md-6 col-lg-4">
-                        <a
-                            href="sobre-mi.html"
-                            class="navigation-card"
-                            data-aos="fade-up"
-                        >
-                            <span class="navigation-icon">
-                                👤
-                            </span>
-
-                            <h3>
-                                Sobre mí
-                            </h3>
-
-                            <p>
-                                Conoce quién soy y mis objetivos.
-                            </p>
-
-                            <span class="navigation-arrow">
-                                →
-                            </span>
-                        </a>
-                    </div>
-
-
-                    <div class="col-md-6 col-lg-4">
-                        <a
-                            href="habilidades.html"
-                            class="navigation-card"
-                            data-aos="fade-up"
-                            data-aos-delay="100"
-                        >
-                            <span class="navigation-icon">
-                                💻
-                            </span>
-
-                            <h3>
-                                Mis habilidades
-                            </h3>
-
-                            <p>
-                                Lenguajes, tecnologías y conocimientos.
-                            </p>
-
-                            <span class="navigation-arrow">
-                                →
-                            </span>
-                        </a>
-                    </div>
-
-
-                    <div class="col-md-6 col-lg-4">
-                        <a
-                            href="estudios.html"
-                            class="navigation-card"
-                            data-aos="fade-up"
-                            data-aos-delay="200"
-                        >
-                            <span class="navigation-icon">
-                                🎓
-                            </span>
-
-                            <h3>
-                                Mis estudios
-                            </h3>
-
-                            <p>
-                                Mi formación actual y autodidacta.
-                            </p>
-
-                            <span class="navigation-arrow">
-                                →
-                            </span>
-                        </a>
-                    </div>
-
-
-                    <div class="col-md-6 col-lg-4">
-                        <a
-                            href="proyectos.html"
-                            class="navigation-card"
-                            data-aos="fade-up"
-                            data-aos-delay="300"
-                        >
-                            <span class="navigation-icon">
-                                🎮
-                            </span>
-
-                            <h3>
-                                Mis proyectos
-                            </h3>
-
-                            <p>
-                                Videojuegos y proyectos de programación.
-                            </p>
-
-                            <span class="navigation-arrow">
-                                →
-                            </span>
-                        </a>
-                    </div>
-
-
-                    <div class="col-md-6 col-lg-4">
-                        <a
-                            href="galeria.html"
-                            class="navigation-card"
-                            data-aos="fade-up"
-                            data-aos-delay="400"
-                        >
-                            <span class="navigation-icon">
-                                🖼️
-                            </span>
-
-                            <h3>
-                                Galería
-                            </h3>
-
-                            <p>
-                                Algunos de mis trabajos e imágenes.
-                            </p>
-
-                            <span class="navigation-arrow">
-                                →
-                            </span>
-                        </a>
-                    </div>
-
-
-                    <div class="col-md-6 col-lg-4">
-                        <a
-                            href="contacto.html"
-                            class="navigation-card"
-                            data-aos="fade-up"
-                            data-aos-delay="500"
-                        >
-                            <span class="navigation-icon">
-                                📩
-                            </span>
-
-                            <h3>
-                                Contacto
-                            </h3>
-
-                            <p>
-                                Encuentra mis medios de contacto.
-                            </p>
-
-                            <span class="navigation-arrow">
-                                →
-                            </span>
-                        </a>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-
-    <!-- ==================================================
-         FOOTER
-    ================================================== -->
-
-    <footer>
-
-        <div class="container">
-
-            <div class="footer-logo">
-                &lt;Raixez/&gt;
-            </div>
-
-            <p>
-                Diseñado y desarrollado por Raúl Elías Sánchez Obreque
-            </p>
-
-            <p id="copyright">
-                © 2026 Raixez
-            </p>
-
-        </div>
-
-    </footer>
-
-
-
-    <!-- Bootstrap JS -->
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"
-    ></script>
-
-    <!-- AOS JS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-
-    <!-- JavaScript propio -->
-    <script src="js/script.js"></script>
-
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================================================
+  FOOTER
+  ================================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-logo">&lt;Raixez/&gt;</div>
+      <p>Diseñado y desarrollado por Raúl Elías Sánchez Obreque</p>
+      <p id="copyright">© 2026 Raixez</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- JavaScript propio -->
+  <script src="js/script.js"></script>
 </body>
 </html>
