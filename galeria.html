@@ -11,6 +11,21 @@
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Ajustes para evitar que la imagen se corte y agregar cursor de clic */
+    .gallery-slide img {
+      max-height: 65vh;
+      width: auto;
+      margin: 0 auto;
+      object-fit: contain;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+    }
+    .gallery-slide img:hover {
+      transform: scale(1.02);
+    }
+  </style>
 </head>
 
 <body data-page="galeria">
@@ -59,37 +74,29 @@
             <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="3"></button>
           </div>
 
-          <div class="carousel-inner">
+          <div class="carousel-inner text-center">
 
             <div class="carousel-item active">
               <div class="gallery-slide">
-                <div class="gallery-placeholder">
-                  <span>+</span> Trabajo 1
-                </div>
+                <img src="img/trabajo-1.jpg" class="d-block img-fluid rounded" alt="Trabajo 1" onclick="verImagenCompleta(this.src)">
               </div>
             </div>
 
             <div class="carousel-item">
               <div class="gallery-slide">
-                <div class="gallery-placeholder">
-                  <span>+</span> Trabajo 2
-                </div>
+                <img src="img/trabajo-2.jpg" class="d-block img-fluid rounded" alt="Trabajo 2" onclick="verImagenCompleta(this.src)">
               </div>
             </div>
 
             <div class="carousel-item">
               <div class="gallery-slide">
-                <div class="gallery-placeholder">
-                  <span>+</span> Trabajo 3
-                </div>
+                <img src="img/trabajo-3.jpg" class="d-block img-fluid rounded" alt="Trabajo 3" onclick="verImagenCompleta(this.src)">
               </div>
             </div>
 
             <div class="carousel-item">
               <div class="gallery-slide">
-                <div class="gallery-placeholder">
-                  <span>+</span> Trabajo 4
-                </div>
+                <img src="img/trabajo-4.jpg" class="d-block img-fluid rounded" alt="Trabajo 4" onclick="verImagenCompleta(this.src)">
               </div>
             </div>
 
@@ -111,6 +118,20 @@
     </section>
   </main>
 
+  <!-- MODAL PARA VER LA IMAGEN COMPLETA -->
+  <div class="modal fade" id="modalImagenCompleta" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark text-white border-secondary">
+        <div class="modal-header border-0 pb-0">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body text-center p-3">
+          <img id="imagenModalSrc" src="" class="img-fluid rounded" alt="Imagen ampliada" style="max-height: 85vh; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer>
     <div class="container">
       <div class="footer-logo">&lt;Raixez/&gt;</div>
@@ -122,6 +143,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="js/script.js"></script>
+
+  <script>
+    function verImagenCompleta(src) {
+      document.getElementById('imagenModalSrc').src = src;
+      var modal = new bootstrap.Modal(document.getElementById('modalImagenCompleta'));
+      modal.show();
+    }
+  </script>
 
 </body>
 </html>
