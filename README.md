@@ -15,3 +15,6 @@ Sigamos la guia paso a paso y dime si hay que modificar el codigo en el caso de 
 tengo que vincular la carpeta al repositorio en git hub como lo hago? dime los comandos que tengo que hacer a continuacion
 
 
+se ve cortada quiero que al pincharla (hacerle clic) se vea toda la imagen, has eso para las 4 imagenes (modifica el codigo entero para copiarlo y pegarlo)
+
+git add .
