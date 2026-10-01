@@ -6,6 +6,7 @@
 
   <title>Sobre mí | Raixez</title>
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -13,6 +14,7 @@
     rel="stylesheet"
   >
 
+  <!-- Bootstrap -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
     rel="stylesheet"
@@ -20,16 +22,21 @@
     crossorigin="anonymous"
   >
 
+  <!-- AOS -->
   <link
     href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
     rel="stylesheet"
   >
 
+  <!-- CSS propio -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body data-page="sobre-mi">
 
+  <!-- ==================================================
+  NAVBAR
+  ================================================== -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
     <div class="container">
       <a class="navbar-brand logo" href="index.html">
@@ -41,6 +48,9 @@
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#menuNavegacion"
+        aria-controls="menuNavegacion"
+        aria-expanded="false"
+        aria-label="Abrir navegación"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -73,47 +83,125 @@
     </div>
   </nav>
 
+  <!-- ==================================================
+  CONTENIDO PRINCIPAL
+  ================================================== -->
   <main class="page-main">
     <section class="content-page">
       <div class="container">
-        <div class="page-header" data-aos="fade-down">
+        
+        <!-- ENCABEZADO -->
+        <div class="page-header text-center" data-aos="fade-down">
           <p>01 — SOBRE MÍ</p>
-          <h1>Conóceme</h1>
+          <h1>Conoce mi historia y mis metas</h1>
         </div>
 
-        <div class="row g-5 align-items-center">
-          <div class="col-lg-7" data-aos="fade-right">
-            <div class="content-box">
-              <h2>Programación y creatividad</h2>
-              <p>
-                Soy <strong>Raúl Elías Sánchez Obreque</strong>, estudiante de cuarto medio de la especialidad de <strong>Programación</strong>.
+        <!-- BIOGRAFÍA DETALLADA -->
+        <div class="row justify-content-center mb-5" data-aos="fade-up">
+          <div class="col-lg-10">
+            <div class="about-bio-box p-4 p-md-5 rounded-4 shadow-lg">
+              <h2 class="mb-4 text-white">¿Quién soy?</h2>
+              <p class="lead-text">
+                Soy un adolescente de 17 años de nacionalidad chilena <img src="img/bandera-chile.png" alt="Bandera Chile" class="inline-mini-flag"> (y ascendencia italiana <img src="img/bandera-italia.png" alt="Bandera Italia" class="inline-mini-flag">, española <img src="img/bandera-espana.png" alt="Bandera España" class="inline-mini-flag"> y mapuche <img src="img/bandera-mapuche.png" alt="Bandera Mapuche" class="inline-mini-flag"> por los apellidos de mis padres: Caffarena, Torres y Obreque), soy un estudiante de la especialidad de programación en un liceo técnico profesional.
               </p>
-              <p>
-                Mi nombre digital es <strong>Raixez</strong> o <strong>Elaizon</strong>.
-              </p>
-              <p>
-                Me interesa especialmente la programación, el desarrollo de videojuegos y la animación digital.
-              </p>
-              <p>
-                A futuro quiero continuar desarrollándome en estas áreas y estudiar <strong>Animación Digital</strong> y/o <strong>Desarrollo de Videojuegos</strong>.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
-            <div class="highlight-box">
-              <div class="highlight-icon">🎮</div>
-              <h3>Mi objetivo</h3>
-              <p>
-                Combinar programación, creatividad, diseño y videojuegos para crear proyectos propios.
+              <p class="lead-text">
+                En mi tiempo libre practico <strong>judo</strong>, que enseña disciplina, respeto (Reijo - 礼法), defensa personal y combate para competencia; <strong>calistenia</strong>, que desarrolla fuerza, control, equilibrio y te enseña a dominar tu cuerpo; practico <strong>dibujo</strong> de varios estilos; hace poco que he empezado a dibujar, así que estoy primero aprendiendo lo básico, como anatomía y perspectivas; y juego algunos videojuegos como <em>Roblox</em>, <em>Brawl Stars</em> y <em>Hollow Knight</em>.
               </p>
             </div>
           </div>
         </div>
+
+        <!-- GALERÍA DE PASATIEMPOS Y DISCIPLINAS -->
+        <div class="section-title text-center mb-4" data-aos="fade-up">
+          <p>MIS PASIONES</p>
+          <h2>Disciplinas y Pasatiempos</h2>
+        </div>
+
+        <div class="row g-4 mb-5 justify-content-center" data-aos="fade-up">
+          <!-- JUDO -->
+          <div class="col-md-4 col-sm-6">
+            <div class="hobby-card">
+              <div class="hobby-img-wrapper">
+                <img src="img/judo.jpg" alt="Judo" class="img-fluid rounded-3">
+              </div>
+              <h4 class="mt-3 text-center h6 text-light">🥋 Judo</h4>
+            </div>
+          </div>
+
+          <!-- CALISTENIA -->
+          <div class="col-md-4 col-sm-6">
+            <div class="hobby-card">
+              <div class="hobby-img-wrapper">
+                <img src="img/calistenia.jpg" alt="Calistenia" class="img-fluid rounded-3">
+              </div>
+              <h4 class="mt-3 text-center h6 text-light">💪 Calistenia</h4>
+            </div>
+          </div>
+
+          <!-- DIBUJO -->
+          <div class="col-md-4 col-sm-6">
+            <div class="hobby-card">
+              <div class="hobby-img-wrapper">
+                <img src="img/dibujo.jpg" alt="Dibujo" class="img-fluid rounded-3">
+              </div>
+              <h4 class="mt-3 text-center h6 text-light">🎨 Dibujo y Anatomía</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- TARJETAS DE OBJETIVOS -->
+        <div class="section-title text-center mt-5 mb-4" data-aos="fade-up">
+          <p>PROYECCIÓN</p>
+          <h2>Mis Objetivos</h2>
+        </div>
+
+        <div class="row g-4 justify-content-center" data-aos="fade-up">
+          <!-- OBJETIVO 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="custom-goal-card">
+              <div class="goal-icon mb-3">🎬</div>
+              <h3 class="goal-title">Animación Digital en Chile</h3>
+              <p class="goal-text">
+                Estudiar Animación Digital en una universidad de Chile como la 
+                <strong>UDLA</strong> <img src="img/udla-logo.png" alt="UDLA" class="inline-uni-logo"> o la 
+                <strong>U. Mayor</strong> <img src="img/umayor-logo.png" alt="U. Mayor" class="inline-uni-logo">.
+              </p>
+            </div>
+          </div>
+
+          <!-- OBJETIVO 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="custom-goal-card">
+              <div class="goal-icon mb-3">🌸</div>
+              <h3 class="goal-title">Beca MEXT & Japón</h3>
+              <p class="goal-text mb-3">
+                Ganar la beca MEXT para estudiar en Japón y especializarme a fondo en el área del desarrollo de videojuegos.
+              </p>
+              <div class="hobby-img-wrapper">
+                <img src="img/japon.jpg" alt="Japón" class="img-fluid rounded-3">
+              </div>
+            </div>
+          </div>
+
+          <!-- OBJETIVO 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="custom-goal-card">
+              <div class="goal-icon mb-3">🎮</div>
+              <h3 class="goal-title">Retorno y Desarrollo</h3>
+              <p class="goal-text">
+                Volver a Chile para trabajar, contando con 2 títulos profesionales de respaldo y un vasto conocimiento en mi campo.
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   </main>
-s
+
+  <!-- ==================================================
+  FOOTER
+  ================================================== -->
   <footer data-aos="fade-up">
     <div class="container">
       <div class="footer-logo">&lt;Raixez/&gt;</div>
@@ -128,6 +216,7 @@ s
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

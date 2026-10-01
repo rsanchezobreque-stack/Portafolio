@@ -3,194 +3,192 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Habilidades | Raixez</title>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  >
-
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-    crossorigin="anonymous"
-  >
-
-  <link
-    href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
-    rel="stylesheet"
-  >
-
+  <title>Habilidades - Raixez</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Estilos principales -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body data-page="habilidades">
 
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
     <div class="container">
       <a class="navbar-brand logo" href="index.html">
-        <span>&lt;</span>Raixez<span>/&gt;</span>
+        <span>Raix</span><span>ez</span>
       </a>
-
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#menuNavegacion"
-      >
+      <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="menuNavegacion">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" data-page-link="inicio" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-page-link="sobre-mi" href="sobre-mi.html">Sobre mí</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-page-link="habilidades" href="habilidades.html">Habilidades</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-page-link="estudios" href="estudios.html">Estudios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-page-link="proyectos" href="proyectos.html">Proyectos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-page-link="galeria" href="galeria.html">Galería</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-page-link="contacto" href="contacto.html">Contacto</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" data-page-link="inicio" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" data-page-link="sobre-mi" href="sobre-mi.html">Sobre Mí</a></li>
+          <li class="nav-item"><a class="nav-link" data-page-link="habilidades" href="habilidades.html">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" data-page-link="estudios" href="estudios.html">Estudios</a></li>
+          <li class="nav-item"><a class="nav-link" data-page-link="proyectos" href="proyectos.html">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" data-page-link="contacto" href="contacto.html">Contacto</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <!-- SECCIÓN HABILIDADES -->
   <main class="page-main">
     <section class="content-page">
       <div class="container">
-        <div class="page-header" data-aos="fade-down">
-          <p>02 — HABILIDADES</p>
-          <h1>Mis conocimientos</h1>
+        <div class="page-header" data-aos="fade-up">
+          <p>MIS CONOCIMIENTOS</p>
+          <h1>Habilidades</h1>
         </div>
 
         <div class="row g-4">
-          <!-- JAVA -->
-          <div class="col-md-6 col-lg-4" data-aos="zoom-in">
+          <!-- Java -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-card-large">
-              <div class="skill-icon">☕</div>
+              <div class="skill-icon">
+                <i class="bi bi-cup-hot-fill"></i>
+              </div>
               <h3>Java</h3>
               <span class="level intermediate">INTERMEDIO</span>
               <p>Conocimientos de programación utilizando Java.</p>
             </div>
           </div>
 
-          <!-- MYSQL -->
-          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+          <!-- MySQL -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
             <div class="skill-card-large">
-              <div class="skill-icon">🗄️</div>
+              <div class="skill-icon">
+                <i class="bi bi-database-fill"></i>
+              </div>
               <h3>MySQL</h3>
               <span class="level intermediate">INTERMEDIO</span>
               <p>Conocimientos de bases de datos y consultas SQL.</p>
             </div>
           </div>
 
-          <!-- PYTHON -->
-          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+          <!-- Python -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
             <div class="skill-card-large">
-              <div class="skill-icon">🐍</div>
+              <div class="skill-icon">
+                <i class="bi bi-filetype-py"></i>
+              </div>
               <h3>Python</h3>
               <span class="level basic">BÁSICO</span>
-              <p>Conocimientos básicos del lenguaje.</p>
+              <p>Conocimientos básicos del lenguaje para scripts y automatización.</p>
             </div>
           </div>
 
-          <!-- JAVASCRIPT -->
-          <div class="col-md-6 col-lg-4" data-aos="zoom-in">
+          <!-- JavaScript -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
             <div class="skill-card-large">
-              <div class="skill-icon">JS</div>
+              <div class="skill-icon">
+                <i class="bi bi-filetype-js"></i>
+              </div>
               <h3>JavaScript</h3>
               <span class="level basic">BÁSICO</span>
-              <p>Conocimientos básicos orientados principalmente al desarrollo web.</p>
+              <p>Conocimientos orientados principalmente al desarrollo web.</p>
             </div>
           </div>
 
           <!-- C++ -->
-          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-card-large">
-              <div class="skill-icon">C++</div>
+              <div class="skill-icon">
+                <i class="bi bi-c-square-fill"></i>
+              </div>
               <h3>C++</h3>
               <span class="level basic">BÁSICO</span>
-              <p>Conocimientos básicos del lenguaje.</p>
+              <p>En proceso de aprendizaje, adquiriendo los fundamentos del lenguaje.</p>
             </div>
           </div>
 
-          <!-- HTML CSS -->
-          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+          <!-- Frameworks CSS -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
             <div class="skill-card-large">
-              <div class="skill-icon">&lt;/&gt;</div>
-              <h3>HTML + CSS</h3>
-              <span class="level learning">DESARROLLO WEB</span>
-              <p>Desarrollo y estructuración de páginas web.</p>
+              <div class="skill-icon">
+                <i class="bi bi-bootstrap-fill"></i>
+              </div>
+              <h3>Frameworks CSS</h3>
+              <span class="level basic">BÁSICO</span>
+              <p>Experiencia utilizando librerías como Bootstrap y Bulma para diseño web.</p>
             </div>
           </div>
 
-          <!-- FRAMEWORKS -->
-          <div class="col-md-6" data-aos="fade-up">
-            <div class="wide-skill-card">
-              <h3>Frameworks</h3>
-              <p>Tengo conocimientos de:</p>
-              <div class="technology-list">
-                <span class="technology">Bootstrap</span>
-                <span class="technology">Bulma</span>
+          <!-- Asistencia Técnica -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-card-large">
+              <div class="skill-icon">
+                <i class="bi bi-wrench-adjustable"></i>
               </div>
-              <div class="framework-highlight">
-                <strong>Framework utilizado en este sitio:</strong>
-                <span>Bootstrap 5</span>
-              </div>
+              <h3>Soporte Técnico</h3>
+              <span class="level intermediate">INTERMEDIO</span>
+              <p>Formateo, limpieza y cambio de componentes en computadoras y dispositivos móviles.</p>
             </div>
           </div>
 
-          <!-- DIBUJO -->
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="wide-skill-card">
-              <h3>🎨 Dibujo</h3>
-              <p>
-                Actualmente estoy aprendiendo a dibujar principalmente utilizando un estilo inspirado en el anime.
-              </p>
-              <span class="level learning">APRENDIENDO</span>
+          <!-- Asesoramiento Hardware -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-card-large">
+              <div class="skill-icon">
+                <i class="bi bi-phone-fill"></i>
+              </div>
+              <h3>Hardware y Móviles</h3>
+              <span class="level intermediate">INTERMEDIO</span>
+              <p>Buen criterio y conocimiento del mercado para elegir y recomendar el mejor equipo o celular.</p>
             </div>
           </div>
+
+          <!-- Prompt Engineering -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-card-large">
+              <div class="skill-icon">
+                <i class="bi bi-robot"></i>
+              </div>
+              <h3>Prompt Engineering</h3>
+              <span class="level intermediate">INTERMEDIO</span>
+              <p>Creación de prompts efectivos y estructurados para que las IAs entreguen resultados exactos.</p>
+            </div>
+          </div>
+
+          <!-- Linux y Terminal -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-card-large">
+              <div class="skill-icon">
+                <i class="bi bi-terminal-fill"></i>
+              </div>
+              <h3>Linux y Terminal</h3>
+              <span class="level basic">BÁSICO</span>
+              <p>Instalación de distribuciones de Linux y manejo básico de comandos en la terminal.</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
-  </main>s
+  </main>
 
-  <footer data-aos="fade-up">
+  <!-- FOOTER -->
+  <footer>
     <div class="container">
-      <div class="footer-logo">&lt;Raixez/&gt;</div>s
-
-      <div class="footer-info">
-        <p class="footer-name">Raúl Elías Sánchez Obreque</p>
-        <p class="footer-course"><span>Curso:</span> 4° Medio — Especialidad Programación</p>
-        <p class="footer-phone"><span>Teléfono:</span> <a href="tel:+56912345678">+56 9 1234 5678</a></p>
-      </div>
-
-      <p id="copyright">© 2026 Raixez. Todos los derechos reservados.</p>
+      <div class="footer-logo">&lt;Raixez/&gt;</div>
+      <p>Raúl Elías Sánchez Obreque</p>
+      <p>Curso: 4° Medio — Especialidad Programación</p>
+      <p>Teléfono: <span style="color: var(--blue-light);">+56 9 1234 5678</span></p>
+      <p id="copyright">© 2026 Raixez</p>
     </div>
   </footer>
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"
-  ></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
